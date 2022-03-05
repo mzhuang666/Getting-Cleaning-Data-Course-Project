@@ -85,6 +85,6 @@ tidydata<-extrac_dat%>%
     group_by(subject, activity)%>%
     summarise_all(funs(mean))
 
-
+write.table(tidydata, "tidydata.txt", row.name=FALSE)
 
 
